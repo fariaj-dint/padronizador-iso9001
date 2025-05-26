@@ -32,4 +32,3 @@ if st.button("🚀 Padronizar"):
         file_name="nomes_padronizados.txt",
         mime="text/plain"
     )
-Add app.py
