@@ -13,7 +13,7 @@ entrada = st.text_area("Nomes originais (um por linha)", height=300)
 
 def padronizar_nome(texto):
     texto = unicodedata.normalize('NFKD', texto).encode('ASCII', 'ignore').decode('utf-8')
-    texto = texto.replace(' ', '_')
+    texto = texto.replace(' ', '-')
     texto = re.sub(r'[^A-Za-z0-9_-]', '', texto)
     texto = texto.upper()
     return texto
